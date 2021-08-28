@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Aritmética</title>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="media">
+            <div class="media__head">
+                <h1 class="media__head--title">Calculo de promedio o media artitmética</h1>
+                <p class="media__head--description">
+                    Vamos a calcular el promedio o la media de los datos que necesites.
+                    <br>
+                    Solo tienes que seguir los siguientes pasos:
+                </p>
+                <ul class="media__head--steps">
+                    <li>1. Ingresa los <strong>números</strong> separados por comas. (Ejemplo: 12, 25, 35, ...).</li>
+                    <li>2. Ingresa el nombre <strong>titulo del promedio</strong> (Ejemplo: Promedio de: notas, edades, salarios, etc).</li>
+                    <li>3. Presiona el botón de <strong>calcular</strong>.</li>
+                </ul>
+            </div>
+            <div class="media__body">
+                 <form class="media__form">
+                    <label for="numbers" class="media__form--group">
+                        <span>Números separados por comas</span>
+                        <input type="text" id="numbers" placeholder="Ejemplo: 12,15,35" autocomplete="off">
+                    </label>
+                    <label for="title" class="media__form--group">
+                       <span>Título</span>
+                       <input type="text" id="title" placeholder="Opcional" autocomplete="off">
+                   </label>
+                   <button id="btnCalculate">Calcular</button>
+                   <button id="btnClearForm">Limpiar</button>
+                 </form>
+                 <div class="media__result">
+                    <p id="result">Resultado</p>
+                 </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/notify.js"></script>
+    <script src="scripts/promedio.js"></script>
+</body>
+</html>
+
